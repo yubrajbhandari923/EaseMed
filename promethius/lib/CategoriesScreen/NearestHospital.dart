@@ -87,7 +87,7 @@ class _MapsState extends State<Maps> {
   Widget build(BuildContext context) {
     return Scaffold(
       
-      appBar: AppBar(title:Text('Fuck'))
+      appBar: AppBar(title:Text('Fuck')),
       body:FlutterMap(
       options:
           MapOptions(center: latLng.LatLng(27.6737961, 85.3205423), zoom: 20),
