@@ -85,7 +85,10 @@ class Maps extends StatefulWidget {
 class _MapsState extends State<Maps> {
   @override
   Widget build(BuildContext context) {
-    return FlutterMap(
+    return Scaffold(
+      
+      appBar: AppBar(title:Text('Fuck'))
+      body:FlutterMap(
       options:
           MapOptions(center: latLng.LatLng(27.6737961, 85.3205423), zoom: 20),
       layers: [
@@ -100,7 +103,7 @@ class _MapsState extends State<Maps> {
             }),
         MarkerLayerOptions(markers: [
           Marker(
-              point: latLng.LatLng(27.6737961, 85.3205423),
+              point: latLng.LatLng(27.34534, 85.32034423),
               builder: ((context) => Container(
                     child: IconButton(
                       icon: Icon(Icons.local_hospital),
@@ -109,7 +112,7 @@ class _MapsState extends State<Maps> {
                   ))),
           //1st
           Marker(
-              point: latLng.LatLng(27.6737961, 85.3205423),
+              point: latLng.LatLng(27.6678961, 85.3465423),
               builder: ((context) => Container(
                     child: IconButton(
                       icon: Icon(Icons.local_hospital),
@@ -118,7 +121,7 @@ class _MapsState extends State<Maps> {
                   ))),
           //2nd
           Marker(
-              point: latLng.LatLng(27.6737961, 85.3205423),
+              point: latLng.LatLng(27.6789961, 85.33345423),
               builder: ((context) => Container(
                     child: IconButton(
                       icon: Icon(Icons.local_hospital),
@@ -127,7 +130,7 @@ class _MapsState extends State<Maps> {
                   ))),
           //3rd
           Marker(
-              point: latLng.LatLng(27.6737961, 85.3205423),
+              point: latLng.LatLng(27.6345444, 8534423),
               builder: ((context) => Container(
                     child: IconButton(
                       icon: Icon(Icons.local_hospital),
@@ -136,7 +139,7 @@ class _MapsState extends State<Maps> {
                   ))),
           //4
           Marker(
-              point: latLng.LatLng(27.6737961, 85.3205423),
+              point: latLng.LatLng(27.673354543, 85.32324523),
               builder: ((context) => Container(
                     child: IconButton(
                       icon: Icon(Icons.local_hospital),
@@ -145,7 +148,7 @@ class _MapsState extends State<Maps> {
                   ))),
           //5
           Marker(
-              point: latLng.LatLng(27.6737961, 85.3205423),
+              point: latLng.LatLng(27.6735342, 85.567523),
               builder: ((context) => Container(
                     child: IconButton(
                       icon: Icon(Icons.local_hospital),
@@ -154,7 +157,7 @@ class _MapsState extends State<Maps> {
                   ))),
           //6
           Marker(
-              point: latLng.LatLng(27.6737961, 85.3205423),
+              point: latLng.LatLng(27.6736778, 85.3434523),
               builder: ((context) => Container(
                     child: IconButton(
                       icon: Icon(Icons.local_hospital),
@@ -163,7 +166,7 @@ class _MapsState extends State<Maps> {
                   ))),
           //7
           Marker(
-              point: latLng.LatLng(27.6737961, 85.3205423),
+              point: latLng.LatLng(27.67463431, 85.45654623),
               builder: ((context) => Container(
                     child: IconButton(
                       icon: Icon(Icons.local_hospital),
@@ -172,7 +175,7 @@ class _MapsState extends State<Maps> {
                   ))),
           //8
           Marker(
-              point: latLng.LatLng(27.6737961, 85.3205423),
+              point: latLng.LatLng(27.6675661, 85.323425324),
               builder: ((context) => Container(
                     child: IconButton(
                       icon: Icon(Icons.local_hospital),
@@ -181,7 +184,7 @@ class _MapsState extends State<Maps> {
                   ))),
           //9
           Marker(
-              point: latLng.LatLng(27.6737961, 85.3205423),
+              point: latLng.LatLng(27.645661, 85.320433),
               builder: ((context) => Container(
                     child: IconButton(
                       icon: Icon(Icons.local_hospital),
@@ -204,7 +207,7 @@ class _MapsState extends State<Maps> {
           source: 'OpenStreetMap contributors',
           onSourceTapped: null,
         ),
-      ],
-    );
+    ],
+    ));
   }
 }
