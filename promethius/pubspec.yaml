@@ -39,6 +39,8 @@ dependencies:
   google_fonts: ^3.0.1
   flutter_svg: ^1.1.4
   location: ^4.4.0
+  http:
+
 
 dev_dependencies:
   flutter_test:
