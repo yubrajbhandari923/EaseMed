@@ -2,8 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import sqlite3
 
-con = sqlite3.connect('news.db')
-cur = con.cursor()
+#con = sqlite3.connect('news.db')
+#cur = con.cursor()
 
 def news():
     url = "https://www.onlinekhabar.com/?search_keyword=health&fbclid=IwAR3iFqwtj-DVIkd7GHxWqa9eSAHxMkv-ozK2Y8BLCQQK2kXhD5a7yfpPgZE"
@@ -32,10 +32,16 @@ def news():
 			]
         news.append(news_dict)
 
-    sql = '''INSERT INTO `nepali_news`
+    """sql = '''INSERT INTO `nepali_news`
             ( `title`, `link`, `summary`) 
             VALUES (?, ?, ?)'''
     cur.executemany(sql,news)
     con.commit()
-    con.close()
+    con.close()"""
+    '''for i in news:
+        print("Title of news",i[0])
+        print("News link",i[1])
+        print("News summary",i[2])
+        break'''
     return news
+
