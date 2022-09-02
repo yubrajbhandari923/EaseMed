@@ -1,4 +1,5 @@
-
+import 'package:promethius/CategoriesScreen/MedicineServices/medicineServices.dart';
+import 'package:promethius/screens/nav_bar/news.dart';
 import 'package:promethius/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
         textTheme:
             GoogleFonts.varelaRoundTextTheme(Theme.of(context).textTheme),
       ),
-      home:OnboardingScreen(),
+      home: OnboardingScreen(),
     );
   }
 }
