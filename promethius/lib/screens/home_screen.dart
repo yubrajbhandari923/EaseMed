@@ -123,8 +123,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => NearestHospital())));
+              Navigator.push(
+                  context, MaterialPageRoute(builder: ((context) => Maps())));
             },
             child: CategoryCard(
               'Nearest\nHospitals',
