@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         textTheme:
             GoogleFonts.varelaRoundTextTheme(Theme.of(context).textTheme),
       ),
-      home: OnboardingScreen(),
+      home: Medicines(),
     );
   }
 }

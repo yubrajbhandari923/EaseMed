@@ -7,48 +7,58 @@ class MedicineCard extends StatelessWidget {
   MedicineCard({required this.name, required this.image, required this.price});
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Container(
-        margin: EdgeInsets.all(
-          20,
-        ),
-        decoration: BoxDecoration(
-            border: Border.symmetric(),
-            borderRadius: BorderRadius.circular(20),
-            color: Colors.white,
-            boxShadow: const [
-              BoxShadow(color: Colors.grey, blurRadius: 20),
-            ]),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Container(
+      height: 150,
+      margin: EdgeInsets.all(
+        20,
+      ),
+      decoration: BoxDecoration(
+          border: Border.symmetric(),
+          borderRadius: BorderRadius.circular(20),
+          color: Colors.white,
+          boxShadow: const [
+            BoxShadow(color: Colors.grey, blurRadius: 20),
+          ]),
+      child:
+          Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+        Row(
           children: [
-            Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 8.0, top: 13),
-                  child: Text(
-                    name,
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ],
-            ),
-            Image.network(image),
-            SizedBox(
-              height: 20,
-            ),
-            Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-              ElevatedButton(
-                onPressed: () {},
-                child: Text(price),
-                style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.red)),
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0, top: 13),
+              child: Text(
+                name,
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              ElevatedButton(onPressed: () {}, child: Text('View More'))
-            ])
+            ),
           ],
         ),
-      ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0, top: 10),
+              child: Image.asset(
+                'images/ambulance.png',
+                height: 100,
+                width: 100,
+              ),
+            ),
+            SizedBox(
+              width: 40,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text(price),
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.red)),
+            ),
+            SizedBox(
+              width: 30,
+            ),
+            ElevatedButton(onPressed: () {}, child: Text('View More'))
+          ],
+        ),
+      ]),
     );
   }
 }
