@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:promethius/constants.dart';
+import 'package:promethius/screens/collective_page.dart';
 import 'package:promethius/screens/home_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -54,7 +55,7 @@ class OnboardingScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => HomeScreen(),
+                            builder: (context) => CollectiveScreen(),
                           ),
                         );
                       },
