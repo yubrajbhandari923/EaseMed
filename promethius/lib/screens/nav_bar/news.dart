@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:promethius/constants.dart';
 import 'dart:convert';
+
+import 'package:promethius/screens/nav_bar/newsCard.dart';
 
 class NewsScreen extends StatefulWidget {
   const NewsScreen({Key? key}) : super(key: key);
@@ -20,14 +23,24 @@ class _NewsScreenState extends State<NewsScreen> {
   @override
   Widget build(BuildContext context) {
     var a = getNews();
-    return Scaffold(
-      body: Container(
-          child: FutureBuilder(
-        future: getNews(),
-        builder: (BuildContext ctx, AsyncSnapshot snapshot) {
-          return Text(snapshot.data[0]["title"]);
-        },
-      )),
+    return FutureBuilder(
+      future: getNews(),
+      builder: (BuildContext ctx, AsyncSnapshot snapshot) {
+        return Scaffold(
+          appBar: AppBar(title: Text('Daily Updates')),
+          body: Column(
+            children: [
+              NewsCard(
+                title: snapshot.data[0]["title"],
+                description: snapshot.data[0]["body"],
+                img: 'assets/images/onboarding_illustration.png',
+              ),
+            ],
+          ),
+        )
+            // Text(snapshot.data[0]["title"])
+            ;
+      },
     );
   }
 }

@@ -86,128 +86,127 @@ class _MapsState extends State<Maps> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
-      appBar: AppBar(title:Text('Fuck'))
-      body:FlutterMap(
-      options:
-          MapOptions(center: latLng.LatLng(27.6737961, 85.3205423), zoom: 20),
-      layers: [
-        TileLayerOptions(
-            urlTemplate:
-                "https://api.mapbox.com/styles/v1/sisambhandari/cl7kcj5h8000a15p7y5wvd0sv/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic2lzYW1iaGFuZGFyaSIsImEiOiJjbDZvZHN3NmQwOXRyM2xyM2g5emt5YWFvIn0.ZaNm2L0QacVrW5wKcmhcAA",
-            userAgentPackageName: 'com.example.app',
-            additionalOptions: {
-              'accessToken':
-                  'pk.eyJ1Ijoic2lzYW1iaGFuZGFyaSIsImEiOiJjbDZvZHN3NmQwOXRyM2xyM2g5emt5YWFvIn0.ZaNm2L0QacVrW5wKcmhcAA',
-              'id': 'mapbox.mapbox-streets-v8',
-            }),
-        MarkerLayerOptions(markers: [
-          Marker(
-              point: latLng.LatLng(27.34534, 85.32034423),
-              builder: ((context) => Container(
-                    child: IconButton(
-                      icon: Icon(Icons.local_hospital),
-                      onPressed: () {},
-                    ),
-                  ))),
-          //1st
-          Marker(
-              point: latLng.LatLng(27.6678961, 85.3465423),
-              builder: ((context) => Container(
-                    child: IconButton(
-                      icon: Icon(Icons.local_hospital),
-                      onPressed: () {},
-                    ),
-                  ))),
-          //2nd
-          Marker(
-              point: latLng.LatLng(27.6789961, 85.33345423),
-              builder: ((context) => Container(
-                    child: IconButton(
-                      icon: Icon(Icons.local_hospital),
-                      onPressed: () {},
-                    ),
-                  ))),
-          //3rd
-          Marker(
-              point: latLng.LatLng(27.6345444, 8534423),
-              builder: ((context) => Container(
-                    child: IconButton(
-                      icon: Icon(Icons.local_hospital),
-                      onPressed: () {},
-                    ),
-                  ))),
-          //4
-          Marker(
-              point: latLng.LatLng(27.673354543, 85.32324523),
-              builder: ((context) => Container(
-                    child: IconButton(
-                      icon: Icon(Icons.local_hospital),
-                      onPressed: () {},
-                    ),
-                  ))),
-          //5
-          Marker(
-              point: latLng.LatLng(27.6735342, 85.567523),
-              builder: ((context) => Container(
-                    child: IconButton(
-                      icon: Icon(Icons.local_hospital),
-                      onPressed: () {},
-                    ),
-                  ))),
-          //6
-          Marker(
-              point: latLng.LatLng(27.6736778, 85.3434523),
-              builder: ((context) => Container(
-                    child: IconButton(
-                      icon: Icon(Icons.local_hospital),
-                      onPressed: () {},
-                    ),
-                  ))),
-          //7
-          Marker(
-              point: latLng.LatLng(27.67463431, 85.45654623),
-              builder: ((context) => Container(
-                    child: IconButton(
-                      icon: Icon(Icons.local_hospital),
-                      onPressed: () {},
-                    ),
-                  ))),
-          //8
-          Marker(
-              point: latLng.LatLng(27.6675661, 85.323425324),
-              builder: ((context) => Container(
-                    child: IconButton(
-                      icon: Icon(Icons.local_hospital),
-                      onPressed: () {},
-                    ),
-                  ))),
-          //9
-          Marker(
-              point: latLng.LatLng(27.645661, 85.320433),
-              builder: ((context) => Container(
-                    child: IconButton(
-                      icon: Icon(Icons.local_hospital),
-                      onPressed: () {},
-                    ),
-                  ))),
-          //10
-          Marker(
-              point: latLng.LatLng(27.6737961, 85.3205423),
-              builder: ((context) => Container(
-                    child: IconButton(
-                      icon: Icon(Icons.local_hospital),
-                      onPressed: () {},
-                    ),
-                  ))),
-        ])
-      ],
-      nonRotatedChildren: [
-        AttributionWidget.defaultWidget(
-          source: 'OpenStreetMap contributors',
-          onSourceTapped: null,
-        ),
-    ],
-    ));
+        appBar: AppBar(title: Text('Fuck')),
+        body: FlutterMap(
+          options: MapOptions(
+              center: latLng.LatLng(27.6737961, 85.3205423), zoom: 20),
+          layers: [
+            TileLayerOptions(
+                urlTemplate:
+                    "https://api.mapbox.com/styles/v1/sisambhandari/cl7kcj5h8000a15p7y5wvd0sv/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic2lzYW1iaGFuZGFyaSIsImEiOiJjbDZvZHN3NmQwOXRyM2xyM2g5emt5YWFvIn0.ZaNm2L0QacVrW5wKcmhcAA",
+                userAgentPackageName: 'com.example.app',
+                additionalOptions: {
+                  'accessToken':
+                      'pk.eyJ1Ijoic2lzYW1iaGFuZGFyaSIsImEiOiJjbDZvZHN3NmQwOXRyM2xyM2g5emt5YWFvIn0.ZaNm2L0QacVrW5wKcmhcAA',
+                  'id': 'mapbox.mapbox-streets-v8',
+                }),
+            MarkerLayerOptions(markers: [
+              Marker(
+                  point: latLng.LatLng(27.6996203, 85.3164463),
+                  builder: ((context) => Container(
+                        child: IconButton(
+                          icon: Icon(Icons.local_hospital_sharp),
+                          onPressed: () {},
+                        ),
+                      ))),
+              // //1st
+              Marker(
+                  point: latLng.LatLng(27.6762501, 85.3156765),
+                  builder: ((context) => Container(
+                        child: IconButton(
+                          icon: Icon(Icons.local_hospital),
+                          onPressed: () {},
+                        ),
+                      ))),
+              // //2nd
+              // Marker(
+              //     point: latLng.LatLng(27.6789961, 85.33345423),
+              //     builder: ((context) => Container(
+              //           child: IconButton(
+              //             icon: Icon(Icons.local_hospital),
+              //             onPressed: () {},
+              //           ),
+              //         ))),
+              // //3rd
+              // Marker(
+              //     point: latLng.LatLng(27.6345444, 8534423),
+              //     builder: ((context) => Container(
+              //           child: IconButton(
+              //             icon: Icon(Icons.local_hospital),
+              //             onPressed: () {},
+              //           ),
+              //         ))),
+              // //4
+              // Marker(
+              //     point: latLng.LatLng(27.673354543, 85.32324523),
+              //     builder: ((context) => Container(
+              //           child: IconButton(
+              //             icon: Icon(Icons.local_hospital),
+              //             onPressed: () {},
+              //           ),
+              //         ))),
+              // //5
+              // Marker(
+              //     point: latLng.LatLng(27.6735342, 85.567523),
+              //     builder: ((context) => Container(
+              //           child: IconButton(
+              //             icon: Icon(Icons.local_hospital),
+              //             onPressed: () {},
+              //           ),
+              //         ))),
+              // //6
+              // Marker(
+              //     point: latLng.LatLng(27.6736778, 85.3434523),
+              //     builder: ((context) => Container(
+              //           child: IconButton(
+              //             icon: Icon(Icons.local_hospital),
+              //             onPressed: () {},
+              //           ),
+              //         ))),
+              // //7
+              // Marker(
+              //     point: latLng.LatLng(27.67463431, 85.45654623),
+              //     builder: ((context) => Container(
+              //           child: IconButton(
+              //             icon: Icon(Icons.local_hospital),
+              //             onPressed: () {},
+              //           ),
+              //         ))),
+              // //8
+              // Marker(
+              //     point: latLng.LatLng(27.6675661, 85.323425324),
+              //     builder: ((context) => Container(
+              //           child: IconButton(
+              //             icon: Icon(Icons.local_hospital),
+              //             onPressed: () {},
+              //           ),
+              //         ))),
+              // //9
+              // Marker(
+              //     point: latLng.LatLng(27.645661, 85.320433),
+              //     builder: ((context) => Container(
+              //           child: IconButton(
+              //             icon: Icon(Icons.local_hospital),
+              //             onPressed: () {},
+              //           ),
+              //         ))),
+              //10
+              Marker(
+                  point: latLng.LatLng(27.6737961, 85.3205423),
+                  builder: ((context) => Container(
+                        child: IconButton(
+                          icon: Icon(Icons.local_hospital),
+                          onPressed: () {},
+                        ),
+                      ))),
+            ])
+          ],
+          nonRotatedChildren: [
+            AttributionWidget.defaultWidget(
+              source: 'OpenStreetMap contributors',
+              onSourceTapped: null,
+            ),
+          ],
+        ));
   }
 }
