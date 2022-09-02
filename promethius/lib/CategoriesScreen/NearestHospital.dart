@@ -102,8 +102,101 @@ class _MapsState extends State<Maps> {
           Marker(
               point: latLng.LatLng(27.6737961, 85.3205423),
               builder: ((context) => Container(
-                    child: FlutterLogo(),
-                  )))
+                    child: IconButton(
+                      icon: Icon(Icons.local_hospital),
+                      onPressed: () {},
+                    ),
+                  ))),
+          //1st
+          Marker(
+              point: latLng.LatLng(27.6737961, 85.3205423),
+              builder: ((context) => Container(
+                    child: IconButton(
+                      icon: Icon(Icons.local_hospital),
+                      onPressed: () {},
+                    ),
+                  ))),
+          //2nd
+          Marker(
+              point: latLng.LatLng(27.6737961, 85.3205423),
+              builder: ((context) => Container(
+                    child: IconButton(
+                      icon: Icon(Icons.local_hospital),
+                      onPressed: () {},
+                    ),
+                  ))),
+          //3rd
+          Marker(
+              point: latLng.LatLng(27.6737961, 85.3205423),
+              builder: ((context) => Container(
+                    child: IconButton(
+                      icon: Icon(Icons.local_hospital),
+                      onPressed: () {},
+                    ),
+                  ))),
+          //4
+          Marker(
+              point: latLng.LatLng(27.6737961, 85.3205423),
+              builder: ((context) => Container(
+                    child: IconButton(
+                      icon: Icon(Icons.local_hospital),
+                      onPressed: () {},
+                    ),
+                  ))),
+          //5
+          Marker(
+              point: latLng.LatLng(27.6737961, 85.3205423),
+              builder: ((context) => Container(
+                    child: IconButton(
+                      icon: Icon(Icons.local_hospital),
+                      onPressed: () {},
+                    ),
+                  ))),
+          //6
+          Marker(
+              point: latLng.LatLng(27.6737961, 85.3205423),
+              builder: ((context) => Container(
+                    child: IconButton(
+                      icon: Icon(Icons.local_hospital),
+                      onPressed: () {},
+                    ),
+                  ))),
+          //7
+          Marker(
+              point: latLng.LatLng(27.6737961, 85.3205423),
+              builder: ((context) => Container(
+                    child: IconButton(
+                      icon: Icon(Icons.local_hospital),
+                      onPressed: () {},
+                    ),
+                  ))),
+          //8
+          Marker(
+              point: latLng.LatLng(27.6737961, 85.3205423),
+              builder: ((context) => Container(
+                    child: IconButton(
+                      icon: Icon(Icons.local_hospital),
+                      onPressed: () {},
+                    ),
+                  ))),
+          //9
+          Marker(
+              point: latLng.LatLng(27.6737961, 85.3205423),
+              builder: ((context) => Container(
+                    child: IconButton(
+                      icon: Icon(Icons.local_hospital),
+                      onPressed: () {},
+                    ),
+                  ))),
+          //10
+          Marker(
+              point: latLng.LatLng(27.6737961, 85.3205423),
+              builder: ((context) => Container(
+                    child: IconButton(
+                      icon: Icon(Icons.local_hospital),
+                      onPressed: () {},
+                    ),
+                  ))),
         ])
       ],
       nonRotatedChildren: [
