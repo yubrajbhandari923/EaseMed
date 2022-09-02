@@ -40,7 +40,7 @@ class OnboardingScreen extends StatelessWidget {
                       height: 20,
                     ),
                     Text(
-                      'Lorem ipsum dolor amet, consectetur\nadipiscing inet deli',
+                      'Lorem ipsum dolor amet, consectetur\nHoward guys sucks',
                       style: TextStyle(
                         fontSize: 16,
                         color: kTitleTextColor.withOpacity(0.7),
