@@ -41,23 +41,57 @@ class _MedicinesState extends State<Medicines> {
         builder: (BuildContext ctx, AsyncSnapshot snapshot) {
           if (snapshot.hasData) {
             return Scaffold(
-                body: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                MedicineCard(
-                    name: snapshot.data[0]["name"],
-                    image: snapshot.data[0]["image"],
-                    price: snapshot.data[0]["price"]),
-                MedicineCard(
-                    name: snapshot.data[1]["name"],
-                    image: snapshot.data[1]["image"],
-                    price: snapshot.data[1]["price"]),
-                MedicineCard(
-                    name: snapshot.data[2]["name"],
-                    image: snapshot.data[2]["image"],
-                    price: snapshot.data[2]["price"]),
-              ],
-            ));
+                appBar: AppBar(
+                  elevation: 0,
+                  backgroundColor: Colors.transparent,
+                  leading: IconButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: Icon(
+                        Icons.arrow_back,
+                        color: Colors.black,
+                      )),
+                ),
+                body: SingleChildScrollView(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      MedicineCard(
+                          name: snapshot.data[0]["name"],
+                          image: snapshot.data[0]["image"],
+                          price: snapshot.data[0]["price"]),
+                      MedicineCard(
+                          name: snapshot.data[1]["name"],
+                          image: snapshot.data[1]["image"],
+                          price: snapshot.data[1]["price"]),
+                      MedicineCard(
+                          name: snapshot.data[2]["name"],
+                          image: snapshot.data[7]["image"],
+                          price: snapshot.data[2]["price"]),
+                      MedicineCard(
+                          name: snapshot.data[3]["name"],
+                          image: snapshot.data[3]["image"],
+                          price: snapshot.data[3]["price"]),
+                      MedicineCard(
+                          name: snapshot.data[4]["name"],
+                          image: snapshot.data[4]["image"],
+                          price: snapshot.data[4]["price"]),
+                      MedicineCard(
+                          name: snapshot.data[5]["name"],
+                          image: snapshot.data[5]["image"],
+                          price: snapshot.data[5]["price"]),
+                      MedicineCard(
+                          name: snapshot.data[6]["name"],
+                          image: snapshot.data[6]["image"],
+                          price: snapshot.data[6]["price"]),
+                      MedicineCard(
+                          name: snapshot.data[7]["name"],
+                          image: snapshot.data[7]["image"],
+                          price: snapshot.data[7]["price"]),
+                    ],
+                  ),
+                ));
           } else {
             return Scaffold(
                 body: Column(

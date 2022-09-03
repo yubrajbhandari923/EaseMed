@@ -2,51 +2,51 @@
     {
         "name": "SARS-CoV-2 Antigen Rapid Test - Self Testing ",
         "price": "Rs. 600",
-        "image": "assets/images/62f61d5eaa66245d4c4526ab_sars-cov-2-antigen-rapid-test-self-testing_500.jpeg"
+        "image": "assets/images/testing.png"
     },
     {
         "name": "Finger Tip Oximeter ",
         "price": "Rs 3456",
-        "image": "assets/images/608fbe7a687685fa595b4bb1_finger-tip-oximeter_500.jpeg"
+        "image": "assets/images/oximeter.jpeg"
     },
     {
         "name": "Sugar Free Gold Sachet 100 ",
         "price": "Rs 250",
-        "image": "assets/images/5f59c92371feb7000123fb26_sugar-free-gold-sachet-100.jpeg"
+        "image": "assets/images/sugar.jpeg"
     },
     {
         "name": "Zandu Chyavanprash 900 gm ",
         "price": "Rs 550",
-        "image": "assets/images/5fbce8a7e56c9800017a12e1_zandu-chyavanprash-900-grm_500.jpeg"
+        "image": "assets/images/c.jpeg"
     },
     {
         "name": "Infrared Thermometer",
         "price": "Rs4000 ",
-        "image": "assets/images/5f0fc58105d7de00011dcc31_infrared-thermometer-bsx-906_500.png"
+        "image": "assets/images/thermo.png"
     },
     {
         "name": "Sopan Oxgen Can ",
         "price": "Rs 450",
-        "image": "assets/images/608d0dbd554f3a945104c322_sopan-oxgen-can_500.jpeg"
+        "image": "assets/images/oxygen.jpeg"
     },
     {
         "name": "Immuno Plus tablet",
         "price": "Rs 2000",
-        "image": "assets/images/5ea98d6432c4fb00011a9880_immuno-plus-90-tablets-bottle_500.png"
+        "image": "assets/images/tablets.png"
     },
     {
         "name": "Becozinc-G Capsule 10'S ",
         "price": "Rs 155",
-        "image": "assets/images/60af3f85ac4cde97c835e3d3_becozinc-g-capsule-10s_500.png"
+        "image": "assets/images/becozinc.png"
     },
     {
         "name": "Scitec Essential Zinc 100 Tablets 'Bottle ",
         "price": "Rs 1550",
-        "image": "assets/images/602e3142062ea80001912afd_scitec-essential-zinc-100-tablets-bottle_500.jpeg"
+        "image": "assets/images/zinc.jpeg"
     },
     {
         "name": "TRQ Calcium Plus Vitamin D ",
         "price": "Rs 3530",
-        "image": "assets/images/5e4b7cde6d451c00015755ca_trq-calcium-plus-vitamin-d.png"
+        "image": "assets/images/calcium.png"
     }
 ]
