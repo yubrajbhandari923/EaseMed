@@ -375,6 +375,17 @@ requests = ">=2.1.0"
 requests-file = ">=1.4"
 
 [[package]]
+name = "torch"
+version = "1.12.1"
+description = "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+category = "main"
+optional = false
+python-versions = ">=3.7.0"
+
+[package.dependencies]
+typing-extensions = "*"
+
+[[package]]
 name = "tqdm"
 version = "4.64.0"
 description = "Fast, Extensible Progress Meter"
@@ -415,7 +426,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "1910de982aca30d0a6b14f6d1474c32575933c2895c67d80788fed0d34fd8977"
+content-hash = "0c98c0790588ad967e42b7f56ee6fe78967883a1daf5c4825156925aecce3d68"
 
 [metadata.files]
 anyio = [
@@ -465,6 +476,7 @@ starlette = [
 ]
 tinysegmenter = []
 tldextract = []
+torch = []
 tqdm = []
 typing-extensions = []
 urllib3 = []
