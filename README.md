@@ -21,5 +21,5 @@ Following are the features of Frida
 * Informs on various fundraiser activitities related to climate action
 
 
-###  Note: We Couldn't build as big app as we wanted due to limited space on free servers. Also, we were unable to deploy chatbot model on app because  pytorch required 700 MB space which was not available to us. Still the model, its data generation and data analysics can be viewed on the jupyter notebook on the [chatbot](https://github.com/yubrajbhandari923/EaseMed/blob/main/backend_code/chatbot/Chatbot-for-mental-health/Models/Retrieval_based.ipynb) repo. time constraint was also a factor to built a dataset from ground up and train excellent model in it
+###  Note: We Couldn't build as big app as we wanted due to limited space on free servers. Also, we were unable to deploy chatbot model on app because  pytorch required 700 MB and tensorflow requires 1.2 GB space which was not available to us. Still the model, its data generation and data analysics can be viewed on the jupyter notebook on the [chatbot](https://github.com/yubrajbhandari923/EaseMed/blob/main/backend_code/chatbot/Chatbot-for-mental-health/Models/Retrieval_based.ipynb) repo. time constraint was also a factor to built a dataset from ground up and train excellent model in it
 
