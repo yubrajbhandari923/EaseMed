@@ -4,7 +4,6 @@ import 'package:promethius/screens/home_screen.dart';
 import 'nav_bar/chat_bot.dart';
 import 'nav_bar/news.dart';
 
-
 class CollectiveScreen extends StatefulWidget {
   const CollectiveScreen({Key? key}) : super(key: key);
 
@@ -17,7 +16,9 @@ class _CollectiveScreenState extends State<CollectiveScreen> {
   var tabIndex = 0;
   var bottomIndex = 0;
   final pageController = PageController();
+
   final screens = [HomeScreen(),const ChatBot(), const NewsScreen() ];
+
 
   @override
   Widget build(BuildContext context) {

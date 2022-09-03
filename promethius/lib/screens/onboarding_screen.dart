@@ -41,7 +41,7 @@ class OnboardingScreen extends StatelessWidget {
                       height: 20,
                     ),
                     Text(
-                      'Lorem ipsum dolor amet, consectetur\nHoward guys sucks',
+                      'An AI based Chat',
                       style: TextStyle(
                         fontSize: 16,
                         color: kTitleTextColor.withOpacity(0.7),
