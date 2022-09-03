@@ -3,8 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:promethius/constants.dart';
-import 'dart:convert';
-
+import 'package:flutter/services.dart';
 import 'package:promethius/screens/nav_bar/newsCard.dart';
 
 class NewsScreen extends StatefulWidget {
@@ -46,4 +45,3 @@ class _NewsScreenState extends State<NewsScreen> {
     );
   }
 }
-
