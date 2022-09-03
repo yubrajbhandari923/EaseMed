@@ -34,7 +34,7 @@ async def get_doctors():
 async def get_hospitals():
     return hospitals_data
 
-@app.get("/chatbot")
-async def chatbot(saysomething):
-    msg=f"{bot_name} : {get_response(saysomething)}"
+@app.get("/chatbot/{message}")
+async def chatbot(message:str):
+    msg=f"{bot_name} : {get_response(message)}"
     return msg
