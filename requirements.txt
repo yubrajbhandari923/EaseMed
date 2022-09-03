@@ -1,6 +1,6 @@
 newspaper3k
 fastapi
-ntlk
+nltk
 keras
 uvicorn
 geopy
