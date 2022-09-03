@@ -196,17 +196,17 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Column(
         children: <Widget>[
           DoctorCard(
-            'Dr. Stella Kane',
-            'Heart Surgeon - Flower Hospitals',
-            'assets/images/doctor1.png',
+            'Dr. Suyog Gaire',
+            'Heart Surgeon - Grandy Hospitals',
+            'assets/images/doctor2.png',
             kBlueColor,
           ),
           SizedBox(
             height: 20,
           ),
           DoctorCard(
-            'Dr. Joseph Cart',
-            'Dental Surgeon - Flower Hospitals',
+            'Dr. Mahesh Raj Pandit',
+            'Dental Surgeon - Bir Hospitals',
             'assets/images/doctor2.png',
             kYellowColor,
           ),
@@ -214,9 +214,9 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 20,
           ),
           DoctorCard(
-            'Dr. Stephanie',
-            'Eye Specialist - Flower Hospitals',
-            'assets/images/doctor3.png',
+            'Dr. Yubraj Bhandari',
+            'Eye Specialist - Teaching Hospitals',
+            'assets/images/doctor2.png',
             kOrangeColor,
           ),
           SizedBox(

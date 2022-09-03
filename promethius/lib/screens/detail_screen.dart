@@ -159,7 +159,7 @@ class DetailScreen extends StatelessWidget {
                         height: 10,
                       ),
                       Text(
-                        'Dr. Stella is the top most heart surgeon in Flower\nHospital. She has done over 100 successful sugeries\nwithin past 3 years. She has achieved several\nawards for her wonderful contribution in her own\nfield. She’s available for private consultation for\ngiven schedules.',
+                        'Dr. Daju is the top most heart surgeon in Teaching\nHospital. He has done over 100 successful sugeries\nwithin past 3 years. He has achieved several\nawards for his wonderful contribution in his own\nfield. He is available for private consultation for\ngiven schedules.',
                         style: TextStyle(
                           height: 1.6,
                           color: kTitleTextColor.withOpacity(0.7),
