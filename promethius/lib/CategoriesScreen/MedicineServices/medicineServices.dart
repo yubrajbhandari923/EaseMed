@@ -57,10 +57,10 @@ class _MedicinesState extends State<Medicines> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      MedicineCard(
-                          name: snapshot.data[0]["name"],
-                          image: snapshot.data[0]["image"],
-                          price: snapshot.data[0]["price"]),
+                      // MedicineCard(
+                      //     name: snapshot.data[0]["name"],
+                      //     image: snapshot.data[0]["image"],
+                      //     price: snapshot.data[0]["price"]),
                       MedicineCard(
                           name: snapshot.data[1]["name"],
                           image: snapshot.data[1]["image"],

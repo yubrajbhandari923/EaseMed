@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:promethius/CategoriesScreen/BloodServices.dart';
+import 'package:promethius/CategoriesScreen/MedicineServices/medicineServices.dart';
 import 'package:promethius/CategoriesScreen/NearestHospital.dart';
 import 'package:promethius/components/MedicinePurchase.dart';
 import 'package:promethius/constants.dart';
@@ -35,7 +36,11 @@ class _HomeScreenState extends State<HomeScreen> {
               decoration: BoxDecoration(
                 color: Colors.black,
               ),
-              child: Text('More Options', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+              child: Text(
+                'More Options',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
             ),
             ListTile(
               title: const Text('Color theme'),
@@ -139,7 +144,7 @@ class _HomeScreenState extends State<HomeScreen> {
           GestureDetector(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => MedicinePurchase()));
+                  MaterialPageRoute(builder: (context) => Medicines()));
             },
             child: CategoryCard(
               'Medicinal Services',

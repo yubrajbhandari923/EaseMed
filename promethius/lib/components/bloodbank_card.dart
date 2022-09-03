@@ -70,14 +70,19 @@ class BloodbankCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 10,),
+                const SizedBox(
+                  height: 10,
+                ),
                 Container(
                   height: 40,
                   decoration: BoxDecoration(
                       color: Colors.red.shade900,
                       borderRadius: BorderRadius.circular(10)),
                   child: const Center(
-                    child: Text('SEE ON GOOGLE MAP',style: TextStyle(color: Colors.white),),
+                    child: Text(
+                      'See On EaseMed Map',
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
                 )
               ],
