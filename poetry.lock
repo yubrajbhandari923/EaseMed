@@ -77,6 +77,14 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
+name = "docopt"
+version = "0.6.2"
+description = "Pythonic argument parser, that will make you smile"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "fastapi"
 version = "0.81.0"
 description = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
@@ -177,6 +185,20 @@ htmlsoup = ["beautifulsoup4"]
 source = ["Cython (>=0.29.7)"]
 
 [[package]]
+name = "mosestokenizer"
+version = "1.2.1"
+description = "Wrappers for several pre-processing scripts from the Moses toolkit."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+docopt = "*"
+openfile = "*"
+toolwrapper = "*"
+uctools = "*"
+
+[[package]]
 name = "newspaper3k"
 version = "0.2.8"
 description = "Simplified python article discovery & extraction."
@@ -228,6 +250,14 @@ description = "NumPy is the fundamental package for array computing with Python.
 category = "main"
 optional = false
 python-versions = ">=3.8"
+
+[[package]]
+name = "openfile"
+version = "0.0.7"
+description = "A convenience function that delegates to the appropriate standard library function."
+category = "main"
+optional = false
+python-versions = "*"
 
 [[package]]
 name = "pandas"
@@ -412,6 +442,14 @@ requests = ">=2.1.0"
 requests-file = ">=1.4"
 
 [[package]]
+name = "toolwrapper"
+version = "2.1.0"
+description = "A base class for wrapping text-processing tools"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "torch"
 version = "1.12.1"
 description = "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
@@ -448,6 +486,14 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "uctools"
+version = "1.3.0"
+description = "Unicode tools."
+category = "main"
+optional = false
+python-versions = ">=3"
+
+[[package]]
 name = "urllib3"
 version = "1.26.12"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
@@ -463,7 +509,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "b94da16e397eef6c7877da7b3c3b0d940d988fcc161cfc4123d0696b5cbf8270"
+content-hash = "4ad5bdad2d71f846cded523ad6e58076ea01979165807d7fbcc7a3a7c82d4157"
 
 [metadata.files]
 anyio = [
@@ -479,6 +525,7 @@ charset-normalizer = []
 click = []
 colorama = []
 cssselect = []
+docopt = []
 fastapi = []
 feedfinder2 = []
 feedparser = []
@@ -491,9 +538,11 @@ jieba3k = []
 joblib = []
 keras = []
 lxml = []
+mosestokenizer = []
 newspaper3k = []
 nltk = []
 numpy = []
+openfile = []
 pandas = []
 pillow = []
 pydantic = []
@@ -516,7 +565,9 @@ starlette = [
 ]
 tinysegmenter = []
 tldextract = []
+toolwrapper = []
 torch = []
 tqdm = []
 typing-extensions = []
+uctools = []
 urllib3 = []
