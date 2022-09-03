@@ -1,6 +1,7 @@
 import requests
 from fastapi import FastAPI
 from backend_code.health_news.health_news import news
+from backend_code.chatbot.chat import bot_name,get_response
 import json
 
 with open("backend_code/doctors_list/UpdatingDoctors.json") as s:
@@ -25,3 +26,7 @@ async def get_doctors():
 async def get_hospitals():
     return hospitals_data
 
+@app.post("/chatbot")
+async def chatbot(saysomething):
+    msg=f"{bot_name} : {get_response(saysomething)}"
+    return msg
