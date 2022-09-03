@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:promethius/CategoriesScreen/MedicineServices/stayTuned.dart';
 
 class MedicineCard extends StatelessWidget {
   String name;
@@ -38,7 +39,7 @@ class MedicineCard extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 8.0, top: 10),
               child: Image.asset(
-                'images/ambulance.png',
+                image,
                 height: 100,
                 width: 100,
               ),
@@ -55,7 +56,12 @@ class MedicineCard extends StatelessWidget {
             SizedBox(
               width: 30,
             ),
-            ElevatedButton(onPressed: () {}, child: Text('View More'))
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (_) => StayTuned()));
+                },
+                child: Text('View More'))
           ],
         ),
       ]),
