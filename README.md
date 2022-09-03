@@ -19,3 +19,7 @@ Following are the features of Frida
 * Latest English and Nepali news on health and changes along with its summary
 * Notifies user about the events happening nearby and also allows to organize an event relating to health
 * Informs on various fundraiser activitities related to climate action
+
+
+###  Note: We Couldn't build as big app as we wanted due to limited space on free servers. Also, we were unable to deploy chatbot model on app because  pytorch required 700 MB space which was not available to us. Still the model, its data generation and data analysics can be viewed on the jupyter notebook on the [chatbot](https://github.com/yubrajbhandari923/EaseMed/blob/main/backend_code/chatbot/Chatbot-for-mental-health/Models/Retrieval_based.ipynb) repo. time constraint was also a factor to built a dataset from ground up and train excellent model in it
+
