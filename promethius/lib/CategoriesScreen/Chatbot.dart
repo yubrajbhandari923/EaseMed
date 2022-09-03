@@ -16,12 +16,14 @@ import 'package:http/http.dart' as http;
 //   }
 // }
 class ChatBotPage extends StatefulWidget {
-  ChatBotPage({Key key, this.title}) : super(key: key);final String title;@override
+  // ChatBotPage() ;
+  final String title="";
+  @override
   _ChatBotPageState createState() => _ChatBotPageState();
 }
 class _ChatBotPageState extends State<ChatBotPage> {final GlobalKey<AnimatedListState> _listKey = GlobalKey();
   List<String> _data = [];
-  static const String BOT_URL = "https://supercodebot.herokuapp.com"; // replace with server address
+  static const String BOT_URL = "tall-crews-own-27-34-12-227.loca.lt"; // replace with server address
   TextEditingController _queryController = TextEditingController();@override
   Widget build(BuildContext context) {return Scaffold(
       appBar: AppBar(
@@ -34,7 +36,7 @@ class _ChatBotPageState extends State<ChatBotPage> {final GlobalKey<AnimatedList
             // key to call remove and insert from anywhere
             key: _listKey,
             initialItemCount: _data.length,
-            itemBuilder: (BuildContext context, int index, Animation animation){
+            itemBuilder: (BuildContext context, int index, Animation<double> animation){
               return _buildItem(_data[index], animation, index);
             }
           ),
@@ -61,10 +63,10 @@ class _ChatBotPageState extends State<ChatBotPage> {final GlobalKey<AnimatedList
       this._insertSingleItem(_queryController.text);
       var client = _getClient();
       try{
-        client.post(BOT_URL, body: {"query" : _queryController.text},)
-        ..then((response){
-          Map<String, dynamic> data = jsonDecode(response.body);
-          _insertSingleItem(data['response']+"<bot>");});
+        print(_queryController.text);
+        client.get(Uri.http(BOT_URL, 'chatbot/${_queryController.text}')).then((response){
+          // Map<String, dynamic> data = jsonDecode(response.body);
+          _insertSingleItem(response.body);});
       }catch(e){
         print("Failed -> $e");
       }finally{
@@ -73,9 +75,9 @@ class _ChatBotPageState extends State<ChatBotPage> {final GlobalKey<AnimatedList
       }
     }
   }void _insertSingleItem(String message){_data.add(message); 
-    _listKey.currentState.insertItem(_data.length-1);
+    _listKey.currentState?.insertItem(_data.length-1);
   }
-  Widget _buildItem(String item, Animation animation,int index){
+  Widget _buildItem(String item, Animation<double> animation,int index){
     bool mine = item.endsWith("<bot>");
     return SizeTransition(
       sizeFactor: animation,

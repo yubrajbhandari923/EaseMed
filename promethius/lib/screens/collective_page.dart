@@ -17,7 +17,7 @@ class _CollectiveScreenState extends State<CollectiveScreen> {
   var tabIndex = 0;
   var bottomIndex = 0;
   final pageController = PageController();
-  final screens = [HomeScreen(), const NewsScreen(), const ChatBot()];
+  final screens = [HomeScreen(),const ChatBot(), const NewsScreen() ];
 
   @override
   Widget build(BuildContext context) {

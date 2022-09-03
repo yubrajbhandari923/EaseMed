@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:promethius/CategoriesScreen/Chatbot.dart';
+
 class ChatBot extends StatefulWidget {
   const ChatBot({Key? key}) : super(key: key);
 
@@ -9,6 +11,8 @@ class ChatBot extends StatefulWidget {
 class _ChatBotState extends State<ChatBot> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: ChatBotPage(),
+    );
   }
 }
