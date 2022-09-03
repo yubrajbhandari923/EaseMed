@@ -3,6 +3,14 @@ from fastapi import FastAPI
 from backend_code.health_news.health_news import news
 from backend_code.chatbot.chat import bot_name,get_response
 import json
+import random
+import json
+from pathlib import Path
+import torch
+from backend_code.chatbot.model import NeuralNet
+from backend_code.chatbot.nltk_utils import bag_of_words, tokenize
+
+
 
 with open("backend_code/doctors_list/UpdatingDoctors.json") as s:
     doctors_list=s.read()
