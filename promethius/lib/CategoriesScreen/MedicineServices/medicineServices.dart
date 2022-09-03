@@ -42,11 +42,20 @@ class _MedicinesState extends State<Medicines> {
           if (snapshot.hasData) {
             return Scaffold(
                 body: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 MedicineCard(
                     name: snapshot.data[0]["name"],
                     image: snapshot.data[0]["image"],
-                    price: snapshot.data[0]["price"])
+                    price: snapshot.data[0]["price"]),
+                MedicineCard(
+                    name: snapshot.data[1]["name"],
+                    image: snapshot.data[1]["image"],
+                    price: snapshot.data[1]["price"]),
+                MedicineCard(
+                    name: snapshot.data[2]["name"],
+                    image: snapshot.data[2]["image"],
+                    price: snapshot.data[2]["price"]),
               ],
             ));
           } else {
