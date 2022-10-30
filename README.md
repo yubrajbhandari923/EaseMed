@@ -13,7 +13,7 @@ The goal of EaseMed is not only to act as a digital medical system but be a one-
 
 
 ## Features
-Following are the features of Frida
+Following are the features of EaseMed
 * Online doctor consultant
 * Alerts the user about their health.
 * Mental health chatbot 
